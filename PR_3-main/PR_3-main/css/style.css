@@ -1,0 +1,45 @@
+body {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.block {
+    background-color: #f5f5dc; /* Бежевий колір */
+    width: 300px;
+    padding: 20px;
+    border: 1px solid gray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    position: relative; /* Для позиціонування стрічки */
+}
+
+.block h2 {
+    text-shadow: 1px -1px 0 white, -1px 1px 0 darkgray;
+    text-align: center;
+}
+
+.block p {
+    font-size: 14px;
+}
+
+.tape {
+    position: absolute;
+    top: -10px; /* Розташування над блоком */
+    left: 50%; /* Центрування */
+    transform: translateX(-50%); /* Точне центрування */
+    width: 80px;
+    height: 20px;
+    background-color: #333; /* Темний колір стрічки */
+    border-radius: 5px 5px 0 0; /* Округлення верхніх кутів */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тінь */
+}
